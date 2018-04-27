@@ -6,9 +6,9 @@ import './index.css';
 class App extends Component {
   render() {
     return (
-      <div className="stress">
+      <div className="food">
         <Switch>
-          <Route path='/dagboek/ontspanning/:step?' component={Step} />
+          <Route path='/dagboek/voeding/:step?' component={Step} />
         </Switch>
       </div>
     );
