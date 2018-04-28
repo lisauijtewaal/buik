@@ -23,15 +23,31 @@
     <title>React App</title>
   </head>
   <header>
-    <ul class="nav">
-      <li><a href="/dagboek">ABOUT</a></li>
-      <li><a href="/blog">BLOG</a></li>
-      <li><a href="/portfolio">PORTFOLIO</a></li>
-    </ul>
+    <div class="nav">
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle"/>
+      <div class="menu">
+        <a href="#">Business</a>
+        <a href="#">Services</a>
+        <a href="#">Learn More</a>
+        <a href="/dagboek"><span>Mijn dagboek</span></a>
+      </div>
+    </div>
   </header>
+
 
   <body>
 
     <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
 </html>

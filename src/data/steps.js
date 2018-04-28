@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from '../components/fields/slider';
+import Number from '../components/fields/number';
 
 export default {
   stress: {
@@ -7,8 +8,8 @@ export default {
     finishedUrl: '/dagboek/voeding',
     category: 'Ontspanning',
     coach: {
-      text: 'Coach tekst voor ontspanning',
-      image: 'images/coach_img_stress.png',
+      text: 'Er worden nu enkele persoonlijke vragen gesteld over stress en ontspanning. Aan de hand van jouw antwoorden kan ik kijken of dit mogelijk invloed heeft op jouw klachten ',
+      image: 'coach-bril.png',
     },
     steps: [
       {
@@ -23,7 +24,7 @@ export default {
         textfield: 'Langdurig veel stress kan voor veel problemen zorgen en aandoeningen zelfs veroorzaken. Wat betreft een prikkelbare darm syndroom heeft stress direct invloed op je spijsvertering en verklaart de extra klachten tijdens stress.',
         image: './images/diaryCategory/stress/step_2.png',
         question: 'Hoeveel stress heb jij vandaag ervaart?',
-        field: <Slider />,
+        field: <Number />,
       },
     ],
   },

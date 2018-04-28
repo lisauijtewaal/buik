@@ -1,27 +1,35 @@
-import React from 'react';
+
 import './index.css';
+import React, { Component } from 'react';
 
 
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      clicks: 0,
+      show: true
+    };
+  }
+
+  IncrementItem = () => {
+    this.setState({ clicks: this.state.clicks + 1 });
+  }
+  DecreaseItem = () => {
+    this.setState({ clicks: this.state.clicks - 1 });
+  }
 
 
-
-const Number = () => {
-  return (
-    <div class="input-group plus-minus-input">
-      <div class="input-group-button">
-        <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
-          <i class="fa fa-minus" aria-hidden="true"></i>
-        </button>
+  render() {
+    return (
+      <div className="field">
+        <button onClick={this.IncrementItem}>-</button>
+        { this.state.show ? <h2>{ this.state.clicks }</h2> : '' }
+        <button onClick={this.DecreaseItem}>+</button>
       </div>
-      <input class="input-group-field" type="number" name="quantity" value="0">
-        <div class="input-group-button">
-          <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
-            <i class="fa fa-plus" aria-hidden="true"></i>
-          </button>
-        </div>
-  );
-};
+    );
+  }
+}
 
-export default Number;
-
+export default App;
 
