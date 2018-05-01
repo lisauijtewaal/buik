@@ -4,6 +4,7 @@ import {Switch, Route, Link } from 'react-router-dom';
 import Start from './start';
 import Stress from './stress';
 import Food from './food'
+import Movement from './movement'
 
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
           <Route path='/dagboek' exact component={Start} />
           <Route path='/dagboek/ontspanning' component={Stress} />
           <Route path='/dagboek/voeding' component={Food} />
-          <Route path='/dagboek/beweging' component={Home} />
+          <Route path='/dagboek/beweging' component={Movement} />
         </Switch>
       </div>
     );

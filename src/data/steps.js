@@ -54,4 +54,30 @@ export default {
       },
     ],
   },
+  movement: {
+
+    url: '/dagboek/beweging',
+    finishedUrl: '/dagboek/resultaten',
+    category: 'beweging',
+    coach: {
+      text: 'Coach tekst voor beweging',
+      image: 'images/coach_img_stress.png',
+    },
+    steps: [
+      {
+        text: 'Sport',
+        textfield: 'Fruit is slecht voor je',
+        image: '"../images/diaryCategory/stress/step_1.jpg',
+        question: 'Hoeveel fruit heb jij vandaag gegeten?',
+        field: <Slider />,
+      },
+      {
+        text: 'Huishoudelijk werk',
+        textfield: 'koolzuur is niet best',
+        image: './images/diaryCategory/stress/step_2.png',
+        question: 'Hoeveel glazen koolzuurhoudende drank heb jij vandaag op?',
+        field: <Slider />,
+      },
+    ],
+  },
 };
