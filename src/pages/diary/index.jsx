@@ -3,8 +3,9 @@ import Home from "../home";
 import {Switch, Route, Link } from 'react-router-dom';
 import Start from './start';
 import Stress from './stress';
-import Food from './food'
-import Movement from './movement'
+import Food from './food';
+import Movement from './movement';
+import Results from './results';
 
 class App extends Component {
   render() {
@@ -15,6 +16,8 @@ class App extends Component {
           <Route path='/dagboek/ontspanning' component={Stress} />
           <Route path='/dagboek/voeding' component={Food} />
           <Route path='/dagboek/beweging' component={Movement} />
+          <Route path='/dagboek/resultaten' component={Results} />
+
         </Switch>
       </div>
     );

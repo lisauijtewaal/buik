@@ -19,26 +19,44 @@ class App extends Component {
     const link = this.props.currentStep === this.props.diaryCategory.steps.length ? this.props.diaryCategory.finishedUrl : `${this.props.diaryCategory.url}/${this.props.currentStep + 1}`;
     let imagePath = currentStep.image;
 
-    return <div className="step">
-      <div className="box">
-        <div className="currentStep">
-            <h3>{this.props.currentStep}</h3>
-            <p>/{this.props.diaryCategory.steps.length}</p>
-        </div>
-        <div className="info">
-          <img className="image" src={require('./step_1.jpg')}/>
+    return <div className="results">
+      <h1>{this.props.diaryCategory.category}</h1>
 
-          <h2>{currentStep.text}</h2>
-          <h1>{this.props.diaryCategory.category}</h1>
-          <p>{currentStep.textfield}</p>
+      <div className="box1">
+        <div className="number">
+          <h1>1</h1>
         </div>
-        <div className="question">
-          <p>{currentStep.question}</p>
-          {currentStep.field}
+        <div className="category">
+          <h1>Koolzuur</h1>
+        </div>
+        <div className="link">
+          <h1> > </h1>
+        </div>
+      </div>
+      <div className="box2">
+        <div className="number">
+          <h1>2</h1>
+        </div>
+        <div className="category">
+          <h1>Koolzuur</h1>
+        </div>
+        <div className="link">
+          <h1> > </h1>
+        </div>
+      </div>
+      <div className="box3">
+        <div className="number">
+          <h1>3</h1>
+        </div>
+        <div className="category">
+          <h1>Koolzuur</h1>
+        </div>
+        <div className="link">
+          <h1> > </h1>
         </div>
       </div>
       <div className="button">
-        <Link role="button" to={link}>Volgende</Link>
+        <Link role="button" to={link}>Finish!</Link>
       </div>
     </div>;
 
@@ -51,12 +69,9 @@ App.propTypes = {
     finishedUrl: PropTypes.string.isRequired,
     coach: PropTypes.shape().isRequired,
     steps: PropTypes.arrayOf(PropTypes.shape({
-      text: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
-      field: PropTypes.node,
     })).isRequired,
   }).isRequired,
-  currentStep: PropTypes.number,
 };
 
 export default App;

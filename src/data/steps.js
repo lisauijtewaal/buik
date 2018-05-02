@@ -1,6 +1,8 @@
 import React from 'react';
 import Slider from '../components/fields/slider';
 import Number from '../components/fields/number';
+import Input from '../components/fields/input';
+
 
 export default {
   stress: {
@@ -50,7 +52,7 @@ export default {
         textfield: 'koolzuur is niet best',
         image: './images/diaryCategory/stress/step_2.png',
         question: 'Hoeveel glazen koolzuurhoudende drank heb jij vandaag op?',
-        field: <Slider />,
+        field: <Input />,
       },
     ],
   },
@@ -69,6 +71,33 @@ export default {
         textfield: 'Fruit is slecht voor je',
         image: '"../images/diaryCategory/stress/step_1.jpg',
         question: 'Hoeveel fruit heb jij vandaag gegeten?',
+        field: <Input />,
+      },
+      {
+        text: 'Huishoudelijk werk',
+        textfield: 'koolzuur is niet best',
+        image: './images/diaryCategory/stress/step_2.png',
+        question: 'Hoeveel glazen koolzuurhoudende drank heb jij vandaag op?',
+        field: <Slider />,
+      },
+
+    ],
+  },
+  results: {
+
+    url: '/dagboek/resultaten',
+    finishedUrl: '/home',
+    category: 'resultaten',
+    coach: {
+      text: 'Coach tekst voor resultaten',
+      image: 'images/coach_img_stress.png',
+    },
+    steps: [
+      {
+        text: 'Sport',
+        textfield: 'Fruit is slecht voor je',
+        image: '"../images/diaryCategory/stress/step_1.jpg',
+        question: 'Hoeveel fruit heb jij vandaag gegeten?',
         field: <Slider />,
       },
       {
@@ -78,6 +107,7 @@ export default {
         question: 'Hoeveel glazen koolzuurhoudende drank heb jij vandaag op?',
         field: <Slider />,
       },
+
     ],
   },
 };

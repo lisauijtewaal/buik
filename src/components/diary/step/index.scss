@@ -1,21 +1,22 @@
 body {
-
   .step {
     margin: 0 auto;
     text-align: center;
     font-size: 14px;
     h1 {
-      color: #ffffff;
+      color: black;
       font-size: 20px;
       margin-top: 0;
       padding-top: 20px;
     }
 
     .button {
-      background-color: orange;
+
       width: 200px;
-      margin: 0 auto;
       padding: 20px 10px;
+      border-radius: 35px;
+      text-align: center;
+      margin: 0 auto;
       margin-top: 20px;
 
       a {
@@ -29,7 +30,6 @@ body {
     .box {
       width: 90%;
       margin: 0 auto;
-      margin-top: 60px;
       text-align: center;
 
       .currentStep {
@@ -71,7 +71,7 @@ body {
       }
 
       .question {
-        padding-bottom: 30px;
+        padding: 20px;
         p {
           margin-top: 0px;
           padding-top: 10px;

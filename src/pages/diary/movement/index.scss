@@ -1,9 +1,9 @@
 body{
   text-align: center;
 
-  .movement{
+  .movement {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #c4dcf4 0%, #c4dcf4 60%, #a9d6b9 100%);
 
-      height: 100%;
-      background-color: pink;
   }
 }
