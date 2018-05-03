@@ -62,20 +62,20 @@ export default {
     finishedUrl: '/dagboek/resultaten',
     category: 'beweging',
     coach: {
-      text: 'Coach tekst voor beweging',
+      text: 'Het is natuurlijk allang bekend dat bewegen goed voor je is. Maar ook de darmen komen in beweging wanneer jij beweegt. ',
       image: 'images/coach_img_stress.png',
     },
     steps: [
       {
         text: 'Sport',
-        textfield: 'Fruit is slecht voor je',
+        textfield: 'Regelmatig sporten brengt je darmen in beweging.',
         image: '"../images/diaryCategory/stress/step_1.jpg',
-        question: 'Hoeveel fruit heb jij vandaag gegeten?',
+        question: 'Hoeveel minuten heb jij vandaag gesport?',
         field: <Input />,
       },
       {
         text: 'Huishoudelijk werk',
-        textfield: 'koolzuur is niet best',
+        textfield: 'Wist je dat je met huishoudelijk werk ook al een hoop beweegt? Zo gebruik je bijna al je spieren bij tuinieren of stofzuigen',
         image: './images/diaryCategory/stress/step_2.png',
         question: 'Hoeveel glazen koolzuurhoudende drank heb jij vandaag op?',
         field: <Slider />,

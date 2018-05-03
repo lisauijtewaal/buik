@@ -19,7 +19,7 @@ class App extends Component {
       <div className="field">
         <input type="number" placeholder="0" value={this.state.message}
                onChange={this.handleChange.bind(this)} />
-        <p><h3>{this.state.message}</h3></p>
+        <p><h3>{this.state.message} minuten</h3></p>
       </div>
     )
   }
