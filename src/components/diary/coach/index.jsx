@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from 'react-router-dom';
 import './index.css';
 
-const Coach = ({ text,image,startUrl }) => {
+const Coach = ({ text,image,nextUrl }) => {
   return (
     <div className="coach">
       <div className ="coach-box">
@@ -14,7 +14,7 @@ const Coach = ({ text,image,startUrl }) => {
         <div className="text-coach">
         <p>{text}</p>
         <div className="button">
-          <Link to={startUrl}>Begin</Link>
+          <Link to={nextUrl}>Begin</Link>
         </div>
         </div>
       </div>
@@ -28,7 +28,7 @@ const Coach = ({ text,image,startUrl }) => {
 Coach.propTypes = {
   text: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  startUrl: PropTypes.string.isRequired,
+  nextUrl: PropTypes.string.isRequired,
 };
 
 export default Coach;

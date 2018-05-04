@@ -1,6 +1,7 @@
 
-import './index.css';
 import React, { Component } from 'react';
+import { DiaryContext } from "../../../context/diary-context";
+import './index.css';
 
 
 class App extends Component {
@@ -8,25 +9,31 @@ class App extends Component {
     super(props);
     this.state = {
       clicks: 0,
-      show: true
     };
   }
 
-  IncrementItem = () => {
-    this.setState({ clicks: this.state.clicks - 1 });
-  };
-  DecreaseItem = () => {
-    this.setState({ clicks: this.state.clicks + 1 });
+  setItem = (value, setScore) => {
+    const clicks = this.state.clicks + value;
+
+    this.setState({clicks: clicks});
+
+    const newValue = this.props.calculateScore(clicks);
+
+    setScore(this.props.type, newValue);
   };
 
 
   render() {
     return (
-      <div className="field">
-        <button onClick={this.IncrementItem}>-</button>
-        { this.state.show ? <h2>{ this.state.clicks }</h2> : '' }
-        <button onClick={this.DecreaseItem}>+</button>
-      </div>
+      <DiaryContext.Consumer>
+        {(diaryState) => (
+          <div className="field">{console.log(diaryState.results)}
+            <button onClick={() => this.setItem(-1, diaryState.setScore)}>-</button>
+            <h2>{ this.state.clicks }</h2>
+            <button onClick={() => this.setItem(1, diaryState.setScore)}>+</button>
+          </div>
+        )}
+      </DiaryContext.Consumer>
     );
   }
 }

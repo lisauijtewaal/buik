@@ -1,35 +1,44 @@
 import './index.css';
 import React, { Component } from 'react';
-import Slider from 'react-rangeslider';
-import 'react-rangeslider/lib/index.css'
+import RangeSlider from 'react-rangeslider';
+import './slider.css'
+import {DiaryContext} from "../../../context/diary-context";
 
 
-class App extends Component {
+class Slider extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-      volume: 0
-    }
+      score: 1,
+    };
   }
 
-  handleOnChange = (value) => {
+  handleOnChange = (newScore, setScore) => {
     this.setState({
-      volume: value
-    })
+      score: newScore
+    });
+    setScore(this.props.type, newScore);
   };
 
   render() {
-    let { volume } = this.state;
+    const score = this.state.score;
     return (
-      <div className="field">
-      <Slider
-        value={volume}
-        orientation="horizontal"
-        onChange={this.handleOnChange}
-      />
-      </div>
+      <DiaryContext.Consumer>
+        {(diaryState)=> (
+          <div className="field">
+            <RangeSlider
+              min={1}
+              max={10}
+              value={score}
+              orientation="horizontal"
+              onChange={(newScore) => this.handleOnChange(newScore, diaryState.setScore)}
+            />
+          </div>
+        )}
+
+      </DiaryContext.Consumer>
     )
   }
 }
 
-export default App;
+export default Slider;

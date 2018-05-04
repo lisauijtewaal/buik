@@ -7,107 +7,138 @@ import Input from '../components/fields/input';
 export default {
   stress: {
     url: '/dagboek/ontspanning',
-    finishedUrl: '/dagboek/voeding',
     category: 'Ontspanning',
     coach: {
+      nextUrl: '/dagboek/ontspanning/stress',
       text: 'Er worden nu enkele persoonlijke vragen gesteld over stress en ontspanning. Aan de hand van jouw antwoorden kan ik kijken of dit mogelijk invloed heeft op jouw klachten ',
       image: 'coach-bril.png',
     },
-    steps: [
-      {
+    steps: {
+      stress: {
         text: 'Langdurige stress',
         textfield: 'Langdurig veel stress kan voor veel problemen zorgen en aandoeningen zelfs veroorzaken. Wat betreft een prikkelbare darm syndroom heeft stress direct invloed op je spijsvertering en verklaart de extra klachten tijdens stress.',
-        image: '"../images/diaryCategory/stress/step_1.jpg',
+        image: require('../images/diaryCategory/stress/step_1.jpg'),
         question: 'Hoeveel stress heb jij vandaag ervaart?',
-        field: <Slider />,
+        field: <Slider type="stress"/>,
+        nextUrl: '/dagboek/ontspanning/angst',
+        category: 'Ontspanning',
       },
-      {
-        text: 'kortudrige stress',
+      angst: {
+        text: 'angst',
         textfield: 'Langdurig veel stress kan voor veel problemen zorgen en aandoeningen zelfs veroorzaken. Wat betreft een prikkelbare darm syndroom heeft stress direct invloed op je spijsvertering en verklaart de extra klachten tijdens stress.',
         image: './images/diaryCategory/stress/step_2.png',
-        question: 'Hoeveel stress heb jij vandaag ervaart?',
-        field: <Number />,
+        question: 'Hoeveel angst heb jij vandaag ervaart?',
+        type: 'angst',
+        field: <Slider type="angst"/>,
+        nextUrl: '/dagboek/voeding',
+        category: 'Ontspanning',
       },
-    ],
+    },
   },
   food: {
-
     url: '/dagboek/voeding',
-    finishedUrl: '/dagboek/beweging',
     category: 'voeding',
     coach: {
+      nextUrl: '/dagboek/voeding/fruit',
       text: 'Coach tekst voor voeding',
       image: 'images/coach_img_stress.png',
     },
-    steps: [
-      {
+    steps: {
+      fruit: {
         text: 'Fruit',
         textfield: 'Fruit is slecht voor je',
         image: '"../images/diaryCategory/stress/step_1.jpg',
         question: 'Hoeveel fruit heb jij vandaag gegeten?',
-        field: <Slider />,
+        field: (
+          <Number
+            type="fruit"
+            calculateScore={value => {
+              if (value === 0 || value > 3) {
+                return 1;
+              } else if (value === 1 || value === 3) {
+                return 5;
+              } else if (value === 2) {
+                return 10;
+              }
+            }}
+          />
+        ),
+        category: 'voeding',
+        nextUrl: '/dagboek/voeding/koolzuur',
       },
-      {
+      koolzuur: {
         text: 'Koolzuur',
         textfield: 'koolzuur is niet best',
         image: './images/diaryCategory/stress/step_2.png',
         question: 'Hoeveel glazen koolzuurhoudende drank heb jij vandaag op?',
-        field: <Input />,
+        field: (
+          <Number
+            type="koolzuur"
+            calculateScore={value => {
+              if (value === 0) {
+                return 10;
+              } else if (value <= 2) {
+                return 5;
+              } else {
+                return 1;
+              }
+            }}
+          />
+        ),
+        category: 'voeding',
+        nextUrl: '/dagboek/beweging',
       },
-    ],
+    },
   },
   movement: {
-
     url: '/dagboek/beweging',
-    finishedUrl: '/dagboek/resultaten',
     category: 'beweging',
     coach: {
+      nextUrl: '/dagboek/beweging/sport',
       text: 'Het is natuurlijk allang bekend dat bewegen goed voor je is. Maar ook de darmen komen in beweging wanneer jij beweegt. ',
       image: 'images/coach_img_stress.png',
     },
-    steps: [
-      {
+    steps: {
+      sport: {
         text: 'Sport',
         textfield: 'Regelmatig sporten brengt je darmen in beweging.',
         image: '"../images/diaryCategory/stress/step_1.jpg',
         question: 'Hoeveel minuten heb jij vandaag gesport?',
-        field: <Input />,
+        field: (
+          <Input
+            type="sport"
+            calculateScore={value => {
+              const score = value / 60 * 10;
+              if (score < 1) {
+                return 1;
+              } else if (score > 10) {
+                return 10;
+              }
+              return score;
+            }}
+          />
+        ),
+        category: 'beweging',
+        nextUrl: '/dagboek/beweging/huishoudelijke_taken'
       },
-      {
+      huishoudelijke_taken: {
         text: 'Huishoudelijk werk',
         textfield: 'Wist je dat je met huishoudelijk werk ook al een hoop beweegt? Zo gebruik je bijna al je spieren bij tuinieren of stofzuigen',
         image: './images/diaryCategory/stress/step_2.png',
         question: 'Hoeveel glazen koolzuurhoudende drank heb jij vandaag op?',
-        field: <Slider />,
+        field: <Slider type="huishoudelijke_taken" />,
+        category: 'beweging',
+        nextUrl: '/dagboek/resultaten',
       },
-
-    ],
+    },
   },
   results: {
-
     url: '/dagboek/resultaten',
-    finishedUrl: '/home',
     category: 'resultaten',
     coach: {
+      nextUrl: '/dagboek/resultaten/top-3',
       text: 'Coach tekst voor resultaten',
       image: 'images/coach_img_stress.png',
     },
-    steps: [
-      {
-        text: 'Sport',
-        textfield: 'Fruit is slecht voor je',
-        image: '"../images/diaryCategory/stress/step_1.jpg',
-        question: 'Hoeveel fruit heb jij vandaag gegeten?',
-        field: <Slider />,
-      },
-      {
-        text: 'Huishoudelijk werk',
-        textfield: 'koolzuur is niet best',
-        image: './images/diaryCategory/stress/step_2.png',
-        question: 'Hoeveel glazen koolzuurhoudende drank heb jij vandaag op?',
-        field: <Slider />,
-      },
-
-    ],
   },
 };

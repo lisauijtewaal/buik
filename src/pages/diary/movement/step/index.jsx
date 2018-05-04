@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="step">
-        <Step diaryCategory={stepsData.movement} currentStep={Number(this.props.match.params.step)}  />
+        <Step diaryCategory={stepsData.movement} currentStep={this.props.match.params.step}  />
       </div>
     );
   }

@@ -7,16 +7,11 @@ import './index.css';
 class App extends Component {
   render() {
 
-    const currentStep = this.props.diaryCategory.steps[this.props.currentStep - 1];
-    console.log('current step', this.props.currentStep, currentStep);
+    const currentStep = this.props.diaryCategory.steps[this.props.currentStep];
     if (!currentStep){
-      return <Coach {...this.props.diaryCategory.coach} startUrl={`${this.props.diaryCategory.url}/1`} />;
+      return <Coach {...this.props.diaryCategory.coach} />;
     }
 
-    // als currenstep gelijk is aan max step ga dan naar colgende object in array
-    // this.props.currentStep === this.props.diaryCategory.steps {
-
-    const link = this.props.currentStep === this.props.diaryCategory.steps.length ? this.props.diaryCategory.finishedUrl : `${this.props.diaryCategory.url}/${this.props.currentStep + 1}`;
     let imagePath = currentStep.image;
 
     return <div className="step">
@@ -26,7 +21,7 @@ class App extends Component {
             <p>/{this.props.diaryCategory.steps.length}</p>
         </div>
         <div className="info">
-          <img className="image" src={require('./step_1.jpg')}/>
+          <img className="image" src={currentStep.image}/>
 
           <h2>{currentStep.text}</h2>
           <h1>{this.props.diaryCategory.category}</h1>
@@ -38,7 +33,7 @@ class App extends Component {
         </div>
       </div>
       <div className="button">
-        <Link role="button" to={link}>Volgende</Link>
+        <Link role="button" to={currentStep.nextUrl}>Volgende</Link>
       </div>
     </div>;
 
@@ -48,15 +43,15 @@ class App extends Component {
 App.propTypes = {
   diaryCategory: PropTypes.shape({
     url: PropTypes.string.isRequired,
-    finishedUrl: PropTypes.string.isRequired,
     coach: PropTypes.shape().isRequired,
-    steps: PropTypes.arrayOf(PropTypes.shape({
+    steps: PropTypes.objectOf(PropTypes.shape({
       text: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
       field: PropTypes.node,
+      nextUrl: PropTypes.string.isRequired,
     })).isRequired,
   }).isRequired,
-  currentStep: PropTypes.number,
+  currentStep: PropTypes.string,
 };
 
 export default App;
