@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 /**
  * score: 1-10
@@ -37,12 +38,18 @@ class ResultListItem extends Component {
     }
 
     return (
+
       <li className={`item-${index + 1} ${scoreColor}`}>
-        {question.text} ({question.category})
-        Score: {score}
+        <div className="header">
+
+          {question.text}
+          ({question.category})
+        </div>
+        <div className="textfield">
         <p>
           {question.textfield}
         </p>
+        </div>
       </li>
     );
   }

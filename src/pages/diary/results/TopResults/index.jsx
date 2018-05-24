@@ -12,6 +12,8 @@ class App extends Component {
           <div className="results">
 
             <h1>Resultaten</h1>
+            <p>Hieronder vind je de top 3 triggers die mogelijk klachten kunnen veroorzaken</p>
+
 
 
             <ResultList results={diaryState.results} />

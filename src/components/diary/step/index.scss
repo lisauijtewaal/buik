@@ -1,4 +1,6 @@
 body {
+  background-color: #92a6cb;
+
   .step {
     margin: 0 auto;
     text-align: center;
@@ -10,64 +12,55 @@ body {
       padding-top: 20px;
     }
 
-    .button {
 
-      width: 200px;
-      padding: 20px 10px;
-      border-radius: 35px;
+
+    .currentStep {
+      margin-left: 316px;
       text-align: center;
-      margin: 0 auto;
-      margin-top: 20px;
+      background-color: #C2BC3B;
+      width: 40px;
 
-      a {
-        color: white;
-        font-size: 14px;
-        text-decoration: none;
-        text-transform: uppercase;
+
+      h3 {
+        display: inline;
+        color: #ffffff;
+        font-size: 28px;
       }
+      p {
+        display: inline;
+        color: #92a6cb;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
     }
+
+
 
     .box {
       width: 90%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       margin: 0 auto;
       text-align: center;
-      padding-top: 60px;
+      background-color: #ffffff;
 
-      .currentStep {
-        margin-bottom: 0px;
-        text-align: right;
-
-        h3 {
-          display: inline;
-          color: orange;
-          font-size: 40px;
-        }
-        p {
-          display: inline;
-          color: white;
-          font-size: 20px;
-          font-weight: 600;
-        }
-
+      .image {
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        margin-bottom: -5px;
       }
 
+
       .info {
-        background-color: #f7f7f7;
+        background-color: #ffffff;
         margin: 0 auto;
         padding: 20px 20px;
         position: relative;
         h2 {
-          color: orange;
-          font-size: 16px;
+          color: #92a6cb;
+          font-size: 12px;
           text-transform: uppercase;
-        }
-
-        .image {
-          margin: 0 auto;
-          width: 110px;
-          margin-top: -150px;
-          border-radius: 50%;
-          border: 6px solid orange;
         }
       }
 
@@ -80,6 +73,21 @@ body {
 
         }
         background-color: #ffffff;
+      }
+      .button {
+
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-align: center;
+        background-color: #c2bc3b;
+
+        a {
+          color: white;
+          font-size: 14px;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
       }
 
     }

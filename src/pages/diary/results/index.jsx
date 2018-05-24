@@ -13,6 +13,7 @@ class App extends Component {
           <Route path='/dagboek/resultaten' exact component={() => <Coach {...stepsData.results.coach} />} />
           <Route path='/dagboek/resultaten/top-3' exact component={TopResults} />
         </Switch>
+
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from '../components/fields/slider';
 import Number from '../components/fields/number';
 import Input from '../components/fields/input';
+import { Link } from 'react-router-dom';
 
 
 export default {
@@ -18,7 +19,7 @@ export default {
         text: 'Langdurige stress',
         textfield: 'Langdurig veel stress kan voor veel problemen zorgen en aandoeningen zelfs veroorzaken. Wat betreft een prikkelbare darm syndroom heeft stress direct invloed op je spijsvertering en verklaart de extra klachten tijdens stress.',
         image: require('../images/diaryCategory/stress/step_1.jpg'),
-        question: 'Hoeveel stress heb jij vandaag ervaart?',
+        question: 'Hoeveel stress heb jij vandaag ervaren?',
         field: <Slider type="stress"/>,
         nextUrl: '/dagboek/ontspanning/angst',
         category: 'Ontspanning',
@@ -47,8 +48,9 @@ export default {
       fruit: {
         text: 'Fruit',
         textfield: 'Fruit is slecht voor je',
-        image: '"../images/diaryCategory/stress/step_1.jpg',
+        image: require('../images/diaryCategory/food/fruit.jpg'),
         question: 'Hoeveel fruit heb jij vandaag gegeten?',
+        link: '/voeding/fruit',
         field: (
           <Number
             type="fruit"
@@ -69,7 +71,8 @@ export default {
       koolzuur: {
         text: 'Koolzuur',
         textfield: 'koolzuur is niet best',
-        image: './images/diaryCategory/stress/step_2.png',
+        image: require('../images/diaryCategory/food/soda.jpg'),
+
         question: 'Hoeveel glazen koolzuurhoudende drank heb jij vandaag op?',
         field: (
           <Number
@@ -126,7 +129,20 @@ export default {
         textfield: 'Wist je dat je met huishoudelijk werk ook al een hoop beweegt? Zo gebruik je bijna al je spieren bij tuinieren of stofzuigen',
         image: './images/diaryCategory/stress/step_2.png',
         question: 'Hoeveel glazen koolzuurhoudende drank heb jij vandaag op?',
-        field: <Slider type="huishoudelijke_taken" />,
+        field: (
+          <Input
+            type="sport"
+            calculateScore={value => {
+              const score = value / 60 * 10;
+              if (score < 1) {
+                return 1;
+              } else if (score > 10) {
+                return 10;
+              }
+              return score;
+            }}
+          />
+        ),
         category: 'beweging',
         nextUrl: '/dagboek/resultaten',
       },
