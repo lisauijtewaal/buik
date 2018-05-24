@@ -1,0 +1,30 @@
+.start {
+  margin: 0 auto;
+
+  .diary {
+    width: 200px;
+  }
+  .message{
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+
+  }
+  .button {
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #c2bc3b;
+
+    a {
+      color: white;
+      font-size: 14px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
