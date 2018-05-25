@@ -15,20 +15,19 @@ body {
 
 
     .currentStep {
-      margin-left: 316px;
+      margin-left: 87%;
       text-align: center;
-      background-color: #C2BC3B;
       width: 40px;
 
 
       h3 {
         display: inline;
         color: #ffffff;
-        font-size: 28px;
+        font-size: 36px;
       }
       p {
         display: inline;
-        color: #92a6cb;
+        color: #c2bc3b;
         font-size: 18px;
         font-weight: 600;
       }
@@ -81,13 +80,11 @@ body {
         padding: 20px 0;
         text-align: center;
         background-color: #c2bc3b;
-
-        a {
           color: white;
           font-size: 14px;
           text-decoration: none;
           text-transform: uppercase;
-        }
+
       }
 
     }

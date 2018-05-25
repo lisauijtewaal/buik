@@ -18,13 +18,13 @@ class App extends Component {
     const getAlert = () => (
       <SweetAlert
         warning
-        confirmBtnText="Yes, delete it!"
-        confirmBtnBsStyle="danger"
-        title="Are you sure?"
+        confirmBtnText="Ik heb het begrepen"
+        title="Regelmatig last van maag-en darmklachten?"
+        buttons= 'true'
         onConfirm={() => this.hideAlert()}
 
       >
-        Wij raden je altijd aan om contact op te nemen met de huisarts wanneer u last heeft van maag-en darmklachten.
+        Neem dan altijd contact op met een huisarts of specialist. Op die manier sluit je uit dat er geen ernstige ziekte de oorzaak is van de klachten.
       </SweetAlert>
     );
 
@@ -54,7 +54,7 @@ class App extends Component {
             onClick={() => this.deleteThisGoal()}
             className='btn btn-danger'
           >
-            halldsodoso
+            Start!
           </a>
           {this.state.alert}
         </div>

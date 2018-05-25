@@ -32,9 +32,11 @@ class App extends Component {
           <p>{currentStep.question}</p>
           {currentStep.field}
         </div>
-      <div className="button">
-        <Link role="button" to={currentStep.nextUrl}>Volgende ❯</Link>
-      </div>
+        <Link to={currentStep.nextUrl}>
+          <button className="button" type="button">
+            Volgende ❯
+          </button>
+        </Link>
       </div>
     </div>;
 

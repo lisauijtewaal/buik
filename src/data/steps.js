@@ -13,6 +13,7 @@ export default {
       nextUrl: '/dagboek/ontspanning/stress',
       text: 'Er worden nu enkele persoonlijke vragen gesteld over stress en ontspanning. Aan de hand van jouw antwoorden kan ik kijken of dit mogelijk invloed heeft op jouw klachten ',
       image: 'coach-bril.png',
+      category: 'Ontspanning',
     },
     steps: {
       stress: {
@@ -43,13 +44,15 @@ export default {
       nextUrl: '/dagboek/voeding/fruit',
       text: 'Coach tekst voor voeding',
       image: 'images/coach_img_stress.png',
+      category: 'Voeding',
+
     },
     steps: {
       fruit: {
         text: 'Fruit',
-        textfield: 'Fruit is slecht voor je',
+        textfield: 'Verorber jij regelmatig fruit? Slim! Zo sleep je bergen nuttige voedingsstoffen aan voor je lijf. Fruit is goed voor je gezondheid en drukt het risico op diverse chronische ziekten waaronder PDS.',
         image: require('../images/diaryCategory/food/fruit.jpg'),
-        question: 'Hoeveel fruit heb jij vandaag gegeten?',
+        question: 'Hoeveel stuks fruit heb jij vandaag gegeten?',
         link: '/voeding/fruit',
         field: (
           <Number
@@ -100,6 +103,7 @@ export default {
       nextUrl: '/dagboek/beweging/sport',
       text: 'Het is natuurlijk allang bekend dat bewegen goed voor je is. Maar ook de darmen komen in beweging wanneer jij beweegt. ',
       image: 'images/coach_img_stress.png',
+      category: 'Beweging',
     },
     steps: {
       sport: {
