@@ -49,6 +49,11 @@ class ResultListItem extends Component {
         <p>
           {question.textfield}
         </p>
+          <Link to={question.url}>
+            <button className="button" type="button">
+              Volgende ❯
+            </button>
+          </Link>
         </div>
       </li>
     );

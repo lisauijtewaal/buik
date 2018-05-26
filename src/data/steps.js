@@ -17,6 +17,7 @@ export default {
     },
     steps: {
       stress: {
+        url: '/spanning/langdurige-stress',
         text: 'Langdurige stress',
         textfield: 'Langdurig veel stress kan voor veel problemen zorgen en aandoeningen zelfs veroorzaken. Wat betreft een prikkelbare darm syndroom heeft stress direct invloed op je spijsvertering en verklaart de extra klachten tijdens stress.',
         image: require('../images/diaryCategory/stress/step_1.jpg'),
@@ -26,6 +27,7 @@ export default {
         category: 'Ontspanning',
       },
       angst: {
+        url: '/spanning/angst',
         text: 'angst',
         textfield: 'Langdurig veel stress kan voor veel problemen zorgen en aandoeningen zelfs veroorzaken. Wat betreft een prikkelbare darm syndroom heeft stress direct invloed op je spijsvertering en verklaart de extra klachten tijdens stress.',
         image: './images/diaryCategory/stress/step_2.png',
@@ -49,6 +51,7 @@ export default {
     },
     steps: {
       fruit: {
+        url: '/voeding/fruit',
         text: 'Fruit',
         textfield: 'Verorber jij regelmatig fruit? Slim! Zo sleep je bergen nuttige voedingsstoffen aan voor je lijf. Fruit is goed voor je gezondheid en drukt het risico op diverse chronische ziekten waaronder PDS.',
         image: require('../images/diaryCategory/food/fruit.jpg'),
@@ -72,6 +75,7 @@ export default {
         nextUrl: '/dagboek/voeding/koolzuur',
       },
       koolzuur: {
+        url: '/voeding/koolzuur',
         text: 'Koolzuur',
         textfield: 'koolzuur is niet best',
         image: require('../images/diaryCategory/food/soda.jpg'),
@@ -107,6 +111,7 @@ export default {
     },
     steps: {
       sport: {
+        url: '/beweging/sport',
         text: 'Sport',
         textfield: 'Regelmatig sporten brengt je darmen in beweging.',
         image: '"../images/diaryCategory/stress/step_1.jpg',
@@ -129,6 +134,7 @@ export default {
         nextUrl: '/dagboek/beweging/huishoudelijke_taken'
       },
       huishoudelijke_taken: {
+        url: '/beweging/huishoudelijke-taken',
         text: 'Huishoudelijk werk',
         textfield: 'Wist je dat je met huishoudelijk werk ook al een hoop beweegt? Zo gebruik je bijna al je spieren bij tuinieren of stofzuigen',
         image: './images/diaryCategory/stress/step_2.png',
@@ -159,6 +165,7 @@ export default {
       nextUrl: '/dagboek/resultaten/top-3',
       text: 'Coach tekst voor resultaten',
       image: 'images/coach_img_stress.png',
+      category: 'Resultaten'
     },
   },
 };
