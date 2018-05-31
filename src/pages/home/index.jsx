@@ -1,14 +1,16 @@
 
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import './index.css';
+
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Home</h1>
-        <input type='text' />
-        <Link to='/dagboek'>Naar dagboek</Link>
+        <h1 className="titel">Krijg grip op jouw PDS klachten</h1>
+        <Link className="button "to='/dagboek'>Login</Link> of  <Link className="button" to='/dagboek'>Maak een account</Link>
       </div>
     );
   }

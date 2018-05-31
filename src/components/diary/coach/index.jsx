@@ -23,7 +23,7 @@ const Coach = ({ text,image,nextUrl, category }) => {
       </div>
       <img className="talk" src={require('./wolk.png')}/>
 
-      <img className="image" src={require('./coach-bril.png')}/>
+      <img className="image" src={image}/>
     </div>
   );
 };

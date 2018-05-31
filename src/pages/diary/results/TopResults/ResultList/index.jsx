@@ -8,9 +8,11 @@ class ResultList extends Component {
     const sortedResults = results.sort((a, b) => {
       return a.score - b.score;
     });
+
     const filteredResults = sortedResults.slice(0, 3);
 
     return (
+
       <ul>
         {/* loop door results. type = sport, result = { score: 10, question: {uit steps-data} } */}
         {filteredResults.map((result, index) => {
@@ -23,6 +25,7 @@ class ResultList extends Component {
           )
         })}
       </ul>
+
     )
 
   }

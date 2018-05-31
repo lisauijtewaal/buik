@@ -1,6 +1,30 @@
-body{;
-.info{
-  width: 200px;
-  Height: 300px;
-  background-color: green;
+body{
+
+
+.information{
+  margin: 0 auto;
+  width: 85%;
+  Height: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  img{
+    width: 100%;
+  }
+
+  .text{
+    padding: 20px;
+
+    .tips{
+      background-color: #c2bc3b;
+      li{
+        color: black;
+        list-style-type: none;
+        margin-top: 20px;
+      }
+    }
+
+  }
+
+
 }}

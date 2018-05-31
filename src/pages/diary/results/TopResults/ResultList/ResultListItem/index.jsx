@@ -27,6 +27,12 @@ import { Link } from 'react-router-dom';
   }
  */
 class ResultListItem extends Component {
+  constructor(props, context) {
+    super(props, context);
+  }
+
+
+
   render() {
     const { score, question, index } = this.props;
 
@@ -37,11 +43,11 @@ class ResultListItem extends Component {
       scoreColor = 'orange';
     }
 
+
     return (
 
       <li className={`item-${index + 1} ${scoreColor}`}>
         <div className="header">
-
           {question.text}
           ({question.category})
         </div>
@@ -49,9 +55,12 @@ class ResultListItem extends Component {
         <p>
           {question.textfield}
         </p>
+          <p className="fact">
+            {question.fact3}
+          </p>
           <Link to={question.url}>
-            <button className="button" type="button">
-              Volgende ❯
+            <button className="hallo" type="button">
+              Meer infomatie over {question.text} en hoe je jouw klachten kan verminderen? Klik hier ❯
             </button>
           </Link>
         </div>

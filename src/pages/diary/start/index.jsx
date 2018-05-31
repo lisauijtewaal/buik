@@ -19,6 +19,7 @@ class App extends Component {
       <SweetAlert
         warning
         confirmBtnText="Ik heb het begrepen"
+        confirmBtnColor='#fffff'
         title="Regelmatig last van maag-en darmklachten?"
         buttons= 'true'
         onConfirm={() => this.hideAlert()}
