@@ -6,6 +6,10 @@ html {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     height: 100%;
+
+    button{
+      border: none;
+    }
     #root {
       height: 100%;
 
@@ -26,14 +30,16 @@ html {
 .nav h3{
   display: inline-block;
   margin: 0 auto;
+
   text-align: center;
-  margin-left: 70px;
   color: white;
+  font-size: 24px;
 }
 .menu {
   margin: 0 30px 0 0;
 }
 .menu a {
+  font-size: 22px;
   clear: right;
   text-decoration: none;
   margin: 0 10px;
@@ -75,7 +81,19 @@ label {
     border-bottom: 1px solid white;
     margin: 0;
 
+
   }
+
+  .nav h3{
+    display: inline-block;
+    margin: 0 auto;
+
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-left: 35px;
+  }
+
   #toggle:checked + .menu {
     display: block;
   }

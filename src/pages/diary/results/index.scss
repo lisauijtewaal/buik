@@ -25,6 +25,19 @@
     li{
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+      button {
+
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0;
+        text-align: center;
+        background-color: #c2bc3b;
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+
+      }
+
     .fact{
       background-color: #ebe4fc;
       border-style: dotted;
@@ -35,7 +48,7 @@
 
 
     .item-1 {
-      margin-top: 30px;
+      margin-top: 35px;
 
       .header {
 
@@ -43,11 +56,13 @@
         margin: 0 auto;
         padding: 20px 0;
         text-align: center;
-        background-color: #c2bc3b;
+        background-color: #ffffff;
       }
       .textfield {
         background-color: white;
         padding: 20px;
+        margin-top: -35px;
+
       }
     }
     .item-2 {
@@ -62,10 +77,12 @@
         margin: 0 auto;
         padding: 20px 0;
         text-align: center;
-        background-color: #c2bc3b;
+        background-color: white;
       }
       .textfield {
         background-color: white;
+        margin-top: -35px;
+
         padding: 20px;
       }
     }
@@ -84,12 +101,13 @@
         margin: 0 auto;
         padding: 20px 0;
         text-align: center;
-        background-color: #c2bc3b;
+        background-color: white;
       }
       .textfield {
         background-color: white;
-        margin-top: -20px;
+        margin-top: -30px;
         padding: 20px;
+
       }
     }
   }

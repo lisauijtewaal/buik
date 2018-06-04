@@ -1,16 +1,110 @@
 body {
   background-color: #92a6cb;
+
+  @media only screen and (min-width: 1080px) {
+
+    .step .step {
+
+      .currentStep {
+        margin-left: 65%;
+        text-align: center;
+        width: 40px;
+        margin-bottom: -40px;
+
+        h3 {
+          display: inline;
+          color: #ffffff;
+          font-size: 50px;
+        }
+        p {
+          display: inline;
+          color: #c2bc3b;
+          font-size: 30px;
+          font-weight: 600;
+        }
+      }
+
+      .box {
+        width: 40%;
+        font-size: 18px;
+
+        .info{
+          .headlines{
+            h2 {
+              margin-bottom: 0;
+
+              span {
+                color: #92a6cb;
+                font-size: 32px;
+                text-transform: uppercase;
+                background-color: white;
+
+              }
+            }
+
+            h1 {
+              margin-top: -1px;
+
+              span {
+                color: white;
+                font-size: 50px;
+                text-transform: uppercase;
+
+
+              }
+            }
+
+          }
+        }
+
+
+        .question {
+
+          img{
+            width: 40px;
+            text-align: right;
+          }
+          padding: 20px;
+          p {
+            margin-top: 0;
+            padding-top: 10px;
+            font-size: 18px;
+
+          }
+          background-color: #ffffff;
+        }
+        .button {
+
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px 0;
+          text-align: center;
+          background-color: #c2bc3b;
+          color: white;
+          font-size: 14px;
+          text-decoration: none;
+          text-transform: uppercase;
+
+        }
+
+      }
+    }
+  }
+
+
+
   
 
   .step {
     margin: 0 auto;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     background-image: url(background.png);
     background-repeat: no-repeat;
 
 
     background-size: 1200px 100%;
+
 
 
 
@@ -39,6 +133,8 @@ body {
     }
 
 
+
+
     .box {
       width: 90%;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -47,6 +143,7 @@ body {
       background-color: #ffffff;
       position: relative;
       margin-top: 40px;
+      margin-bottom: 30px;
 
       .image {
         width: 100%;
@@ -78,22 +175,22 @@ body {
             margin-bottom: 0;
 
             span {
-              color: #92a6cb;
+              color: white;
               font-size: 16px;
               text-transform: uppercase;
-              background-color: white;
+              background-color: #92a6cb;
 
             }
           }
 
           h1 {
-            margin-top: -1px;
+            margin-top: -2px;
 
             span {
               color: white;
               font-size: 32px;
               text-transform: uppercase;
-              background-color: #92a6cb;
+              background-color: #c2bc3b;
 
 
             }

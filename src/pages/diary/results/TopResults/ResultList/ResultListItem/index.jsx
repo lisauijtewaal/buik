@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+
 /**
  * score: 1-10
  * question: {
@@ -48,8 +49,8 @@ class ResultListItem extends Component {
 
       <li className={`item-${index + 1} ${scoreColor}`}>
         <div className="header">
-          {question.text}
-          ({question.category})
+          <h1>{question.text}</h1>
+          <h2>({question.category})</h2>
         </div>
         <div className="textfield">
         <p>
@@ -60,7 +61,7 @@ class ResultListItem extends Component {
           </p>
           <Link to={question.url}>
             <button className="hallo" type="button">
-              Meer infomatie over {question.text} en hoe je jouw klachten kan verminderen? Klik hier ❯
+              Lees hoe je jouw klachten kan verminderen❯
             </button>
           </Link>
         </div>

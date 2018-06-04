@@ -34,7 +34,7 @@ export default {
       },
       angst: {
         url: '/spanning/angst',
-        text: 'Ontspanning',
+        text: 'Tijd voor jezelf',
         textfield: 'Bij een gezond dagpatroon hoort ook de nodige mate van evenveel inspanning en ontspanning is dus belangrijk. Hoe zit het met jouw balans? Neem jij genoeg rust tussen alle bezigheden door? Verstandig! Doe je te veel of kom je niet genoeg aan activiteiten toe? Dat kan natuurlijk altijd. Dan kan het gebrek aan inspanning en ontspanning een belangrijke prikkel zijn van jouw klachten.',
         image: require('../images/diaryCategory/stress/relax.jpg'),
         question: 'Hoe ontspannen voelde jij je vandaag?',
@@ -155,7 +155,7 @@ export default {
       },
       huishoudelijke_taken: {
         url: '/beweging/huishoudelijke-taken',
-        text: 'Bewegen',
+        text: 'Dagelijkse beweging',
         textfield: 'Natuurlijk heeft niet iedereen tijd om dagelijks uren te sporten, maar door kleine momenten in je dag in te bouwen waarop je een aantal oefeningen doet of gewoon jezelf te verplichten om kleine fysieke taken te doen tussendoor kan je je lichaam al veel fitter maken. Het zijn kleine dingen maar als je ze elke dag gedurende een langere periode doet dan betekenen ze wel een wereld van verschil voor de darmen.',
         image: './images/diaryCategory/stress/step_2.png',
         question: 'Hoeveel minuten heb jij vandaag bewogen?',
