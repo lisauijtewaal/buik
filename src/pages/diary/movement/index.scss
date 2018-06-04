@@ -7,6 +7,21 @@ body{
     height: 100%;
     .step{
       height: 100%;
+
+      h2 span{
+        background-color: #f9b729 !important;
+      }
+
+      .box  {
+
+        .currentStep {
+
+          p {
+            color: #f9b729 !important;
+
+          }
+        }
+      }
     }
 
   }

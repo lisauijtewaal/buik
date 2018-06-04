@@ -36,9 +36,7 @@ class App extends Component {
             <h1>Resultaten</h1>
             <p>Hieronder vind je de top 3 triggers die mogelijk klachten kunnen veroorzaken</p>
             <div className="links"> <Link to='/dagboek/resultaten/top-3/' onClick={this.printDocument}>
-              <button className="hallo" type="button">
-                <img className="printImage" src={require('../../../../images/print.png')}/>
-              </button>
+                <img className="printImage" src={require('../../../../images/download.png')}/>
             </Link></div>
             <ResultList results={diaryState.results} />
             <div className="button">

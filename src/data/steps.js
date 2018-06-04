@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 export default {
   stress: {
     url: '/dagboek/ontspanning',
+    color: 'yellow',
+    pages: '/2',
     category: 'Denken',
     coach: {
       nextUrl: '/dagboek/ontspanning/stress',
@@ -28,6 +30,7 @@ export default {
         fact3: 'In een periode van stress kunnen er met name klachten optreden rond de zwakke plekken van het lichaam. Vanzelfsprekend kan bij het prikkelbare darm syndroom de darm als zwakke plek gezien worden. Met stress verergeren de klachten van PDS daarom vaak.',
         field: <Slider type="stress"/>,
         popup: 'Beweeg de slider heen en weer.',
+        step: '1',
         popImage: require('../images/diaryCategory/slider.gif'),
         nextUrl: '/dagboek/ontspanning/angst',
         category: 'Ontspanning',
@@ -40,6 +43,7 @@ export default {
         question: 'Hoe ontspannen voelde jij je vandaag?',
         type: 'angst',
         field: <Slider type="angst"/>,
+        step: '2',
         popup: 'Beweeg de slider heen en weer.',
         popImage: require('../images/diaryCategory/slider.gif'),
         nextUrl: '/dagboek/voeding',
@@ -50,6 +54,7 @@ export default {
   food: {
     url: '/dagboek/voeding',
     category: 'voeding',
+    pages: '/2',
     coach: {
       nextUrl: '/dagboek/voeding/fruit',
       text: 'Coach tekst voor voeding',
@@ -84,6 +89,7 @@ export default {
           />
         ),
         popup: 'Klik op de plus-of minbutton om het aantal te wijzigen.',
+        step: '1',
         popImage: require('../images/diaryCategory/number.gif'),
         category: 'voeding',
         nextUrl: '/dagboek/voeding/koolzuur',
@@ -112,6 +118,7 @@ export default {
           />
         ),
         popup: 'Klik op de plus-of minbutton om het aantal te wijzigen.',
+        step: '2',
         popImage: require('../images/diaryCategory/number.gif'),
         category: 'voeding',
         nextUrl: '/dagboek/beweging',
@@ -121,10 +128,11 @@ export default {
   movement: {
     url: '/dagboek/beweging',
     category: 'beweging',
+    pages: '/2',
     coach: {
       nextUrl: '/dagboek/beweging/sport',
       text: 'Het is natuurlijk allang bekend dat bewegen goed voor je is. Maar ook de darmen komen in beweging wanneer jij beweegt. ',
-      image: 'images/coach_img_stress.png',
+      image: require('../components/diary/coach/coachsport.png'),
       category: 'Beweging',
     },
     steps: {
@@ -132,7 +140,7 @@ export default {
         url: '/beweging/sport',
         text: 'Sport',
         textfield: 'Regelmatig sporten brengt je darmen in beweging.Sporten zorgt voor een betere darmwerking in het algemeen: dankzij een betere bloeddoorstroming kan de dikke darm meer efficiënt werken. En natuurlijk is sporten ook voor de rest van je gezondheid aan te bevelen.',
-        image: '"../images/diaryCategory/stress/step_1.jpg',
+        image: require('../images/diaryCategory/movement/sport.jpeg'),
         question: 'Hoeveel minuten heb jij vandaag gesport?',
         field: (
           <Input
@@ -150,6 +158,7 @@ export default {
         ),
         category: 'beweging',
         popup: 'Klik in het inputfield en type het juiste getal.',
+        step: '1',
         popImage: require('../images/diaryCategory/input.gif'),
         nextUrl: '/dagboek/beweging/huishoudelijke_taken'
       },
@@ -157,7 +166,7 @@ export default {
         url: '/beweging/huishoudelijke-taken',
         text: 'Dagelijkse beweging',
         textfield: 'Natuurlijk heeft niet iedereen tijd om dagelijks uren te sporten, maar door kleine momenten in je dag in te bouwen waarop je een aantal oefeningen doet of gewoon jezelf te verplichten om kleine fysieke taken te doen tussendoor kan je je lichaam al veel fitter maken. Het zijn kleine dingen maar als je ze elke dag gedurende een langere periode doet dan betekenen ze wel een wereld van verschil voor de darmen.',
-        image: './images/diaryCategory/stress/step_2.png',
+        image: require('../images/diaryCategory/movement/dagelijks.jpeg'),
         question: 'Hoeveel minuten heb jij vandaag bewogen?',
         field: (
           <Input
@@ -176,6 +185,7 @@ export default {
         category: 'beweging',
         popup: 'Klik in het inputfield en type het juiste getal.',
         popImage: require('../images/diaryCategory/input.gif'),
+        step: '2',
         nextUrl: '/dagboek/resultaten',
       },
     },

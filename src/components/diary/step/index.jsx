@@ -36,11 +36,12 @@ class App extends Component {
     return <div className="step">
 
 
-      <div className="currentStep">
-        <h3>1</h3>
-        <p>/2</p>
-      </div>
+
       <div className="box">
+        <div className="currentStep">
+          <h3>{currentStep.step}</h3>
+          <p>{this.props.diaryCategory.pages}</p>
+        </div>
         <img className="image" src={currentStep.image}/>
         <div className="info">
 
@@ -51,9 +52,11 @@ class App extends Component {
           <p>{currentStep.textfield}</p>
 
         </div>
+        <hr />
 
         <div className="question">
           <img className="popImage" src={require('../../../images/info.png')} onClick={this.togglePopup.bind(this)}/>
+
           {this.state.showPopup ?
             <Popup
               text={currentStep.popup}
@@ -62,6 +65,7 @@ class App extends Component {
             />
             : null
           }
+          <h2> Vraag </h2>
           <p>{currentStep.question}</p>
           {currentStep.field}
         </div>
@@ -83,11 +87,13 @@ App.propTypes = {
   diaryCategory: PropTypes.shape({
     url: PropTypes.string.isRequired,
     coach: PropTypes.shape().isRequired,
+    pages: PropTypes.shape().isRequired,
     steps: PropTypes.objectOf(PropTypes.shape({
       text: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
       field: PropTypes.node,
       popup: PropTypes.node,
+      step: PropTypes.node,
       nextUrl: PropTypes.string.isRequired,
     })).isRequired,
   }).isRequired,

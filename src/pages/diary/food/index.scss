@@ -4,6 +4,17 @@ body{
   .food {
     height: 100%;
 
+    h2 span {
+      background-color: #c2bc3b !important;
+    }
 
+    .currentStep {
+
+      p {
+        color: #c2bc3b !important;
+
+      }
+
+    }
   }
 }
