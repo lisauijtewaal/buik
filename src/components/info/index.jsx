@@ -11,9 +11,6 @@ class App extends Component {
         <img className="image" src={propTypes.food.steps.fruit.image}/>
       </div>
       <div className="links"> <Link to='/dagboek/resultaten/top-3/' onClick={() => window.print()}>
-        <button className="hallo" type="button">
-          <img className="printImage" src={require('../../images/print.png')}/>
-        </button>
       </Link></div>
       <div className="text">
       <h1>{propTypes.food.steps.fruit.text}</h1>

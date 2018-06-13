@@ -130,15 +130,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
     .box {
       width: 90%;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -147,16 +138,17 @@ body {
       background-color: #ffffff;
       position: relative;
       margin-top: 40px;
-      margin-bottom: 30px;
+      margin-bottom: 80px;
 
       .currentStep {
-        top: 0;
+        margin-top: -29px;
         right: 0;
         text-align: center;
-        width: 50px;
-        //margin-top: -40px;
+        width: 70px;
         background-color: white;
+        //margin-top: -40px;
         position: absolute;
+
 
 
         h3 {
@@ -171,8 +163,6 @@ body {
           font-weight: 600;
         }
 
-
-
       }
 
       .image {
@@ -182,9 +172,6 @@ body {
 
         //margin-top: -70px;
       }
-
-
-
 
       .info {
         background-color: #efefef61;
@@ -245,7 +232,7 @@ body {
         }
 
 
-        img{
+        .popImage{
           width: 22px;
           right: 20px;
           top: 10px;

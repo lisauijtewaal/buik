@@ -15,7 +15,7 @@ const Coach = ({ text,image,nextUrl, category }) => {
         <p>{text}</p>
           <Link to={nextUrl}>
             <button type="button">
-              Begin!
+              Start!
             </button>
           </Link>
 

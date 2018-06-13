@@ -15,7 +15,7 @@ export default {
     coach: {
       nextUrl: '/dagboek/ontspanning/stress',
       text: 'Er worden nu enkele persoonlijke vragen gesteld over stress en ontspanning. Aan de hand van jouw antwoorden kan ik kijken of dit mogelijk invloed heeft op jouw klachten ',
-      image: require('../components/diary/coach/coach-bril.png'),
+      image: require('../components/diary/coach/coachrelax.png'),
       category: 'Ontspanning',
     },
     steps: {
@@ -58,7 +58,7 @@ export default {
     coach: {
       nextUrl: '/dagboek/voeding/fruit',
       text: 'Coach tekst voor voeding',
-      image: 'images/coach_img_stress.png',
+      image: require('../components/diary/coach/coachfruit.png'),
       category: 'Voeding',
 
     },
@@ -139,7 +139,7 @@ export default {
       sport: {
         url: '/beweging/sport',
         text: 'Sport',
-        textfield: 'Regelmatig sporten brengt je darmen in beweging.Sporten zorgt voor een betere darmwerking in het algemeen: dankzij een betere bloeddoorstroming kan de dikke darm meer efficiënt werken. En natuurlijk is sporten ook voor de rest van je gezondheid aan te bevelen.',
+        textfield: 'Regelmatig sporten brengt je darmen in beweging. Sporten zorgt voor een betere darmwerking in het algemeen: dankzij een betere bloeddoorstroming kan de dikke darm  efficiënter werken. En natuurlijk is sporten ook voor de rest van je gezondheid aan te bevelen.',
         image: require('../images/diaryCategory/movement/sport.jpeg'),
         question: 'Hoeveel minuten heb jij vandaag gesport?',
         field: (
@@ -195,8 +195,8 @@ export default {
     category: 'resultaten',
     coach: {
       nextUrl: '/dagboek/resultaten/top-3',
-      text: 'Coach tekst voor resultaten',
-      image: require('../components/diary/coach/coach_thumbsup.png'),
+      text: 'Heel goed! Je hebt alle vragen beantwoord. Ik heb nu een goed beeld van jouw levensstijl en geef je graag advies. Klik op de volgende pagina om te zien wat oorzaken kunnen zijn van jouw klachten.',
+      image: require('../components/diary/coach/coachfinish.png'),
       category: 'Resultaten'
     },
   },

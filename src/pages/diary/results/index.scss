@@ -44,67 +44,112 @@
     }
 
 
+
+
     .item-1 {
-      margin-top: 35px;
 
-      .header {
+      margin-bottom: 50px;
+      width: 100%;
+      height: 100%;
+      display: flex;
 
-        width: 100%;
-        margin: 0 auto;
-        padding: 20px 0;
-        text-align: center;
-        background-color: #ffffff;
+
+      .colorband{
+        width: 3%;
+        float: left;
+        flex: 1;
       }
-      .textfield {
-        background-color: white;
-        padding: 20px;
-        margin-top: -35px;
 
+      .field {
+        width: 97%;
+        overflow: hidden;
+
+        .header {
+
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px 0;
+          text-align: center;
+          background-color: #ffffff;
+        }
+        .textfield {
+          background-color: white;
+          padding: 20px;
+          margin-top: -35px;
+
+        }
       }
     }
+
+
+
     .item-2 {
-      width: 90%;
+
       margin: 0 auto;
       margin-top: 30px;
+      display: flex;
+      width: 100%;
 
-      font-size: 12px;
-      .header {
+      .colorband{
+        width: 3%;
 
-        width: 100%;
-        margin: 0 auto;
-        padding: 20px 0;
-        text-align: center;
-        background-color: white;
+        float: left;
+        flex: 1;
       }
-      .textfield {
-        background-color: white;
-        margin-top: -35px;
 
-        padding: 20px;
+      .field {
+        width: 97%;
+        font-size: 12px;
+        .header {
+
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px 0;
+          text-align: center;
+          background-color: white;
+        }
+        .textfield {
+          background-color: white;
+          margin-top: -35px;
+
+          padding: 20px;
+        }
       }
     }
 
 
     .item-3 {
-      width: 90%;
+
       margin: 0 auto;
       margin-top: 30px;
+      display: flex;
+      width: 100%;
 
+      .colorband{
+        width: 3%;
 
-      font-size: 12px;
-      .header {
-
-        width: 100%;
-        margin: 0 auto;
-        padding: 20px 0;
-        text-align: center;
-        background-color: white;
+        float: left;
+        flex: 1;
       }
-      .textfield {
-        background-color: white;
-        margin-top: -30px;
-        padding: 20px;
 
+      .field {
+
+        width: 97%;
+        font-size: 12px;
+        .header {
+
+          width: 100%;
+          margin: 0 auto;
+          padding: 20px 0;
+          text-align: center;
+          background-color: white;
+        }
+        .textfield {
+          background-color: white;
+          margin-top: -30px;
+          padding: 20px;
+
+        }
       }
     }
   }

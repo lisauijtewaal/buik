@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <img className="logo" src={require('../../images/logo.png')}/> <br />
-        <h1 className="titel">Krijg grip op jouw PDS klachten</h1>
+        <h1 className="titel">Krijg grip op jouw maag-en darmklachten</h1>
         <Link className="button "to='/dagboek'>Login</Link> of  <Link className="button" to='/dagboek'>Maak een account</Link>
       </div>
     );

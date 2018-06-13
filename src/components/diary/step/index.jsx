@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import Coach from '../coach';
 import './index.css';
 import Popup from '../../popup'
+import ReactDOM from 'react-dom'
 
 class App extends Component {
   constructor(props, context) {
+
     super(props, context);
     this.state = {
       showPopup: false
@@ -20,9 +22,7 @@ class App extends Component {
   }
 
 
-
   render() {
-
 
     const currentStep = this.props.diaryCategory.steps[this.props.currentStep];
     console.log(this.props.currentStep);
@@ -31,20 +31,15 @@ class App extends Component {
 
     }
 
-
-
     return <div className="step">
-
-
-
       <div className="box">
+
+        <img className="image" src={currentStep.image}/>
         <div className="currentStep">
           <h3>{currentStep.step}</h3>
           <p>{this.props.diaryCategory.pages}</p>
         </div>
-        <img className="image" src={currentStep.image}/>
         <div className="info">
-
           <div className="headlines">
           <h2><span>{this.props.diaryCategory.category}</span></h2>
             <h1><span>{currentStep.text}</span></h1>

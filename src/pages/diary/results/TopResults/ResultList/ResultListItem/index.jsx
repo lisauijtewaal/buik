@@ -48,6 +48,8 @@ class ResultListItem extends Component {
     return (
 
       <li className={`item-${index + 1} ${scoreColor}`}>
+        <div className="colorband" style={{backgroundColor: scoreColor}}></div>
+        <div className="field">
         <div className="header">
           <h1>{question.text}</h1>
           <h2>({question.category})</h2>
@@ -64,6 +66,7 @@ class ResultListItem extends Component {
               Lees hoe je jouw klachten kan verminderen❯
             </button>
           </Link>
+        </div>
         </div>
       </li>
     );
