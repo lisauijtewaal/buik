@@ -2,8 +2,10 @@ import React from 'react';
 import Slider from '../components/fields/slider';
 import Number from '../components/fields/number';
 import Input from '../components/fields/input';
-import Popup from '../components/popup'
-import { Link } from 'react-router-dom';
+
+/*
+All the data for the different triggers in the app
+ */
 
 
 export default {
@@ -57,7 +59,7 @@ export default {
     pages: '/2',
     coach: {
       nextUrl: '/dagboek/voeding/fruit',
-      text: 'Coach tekst voor voeding',
+      text: 'We beginnen nu aan het hoofdstuk voeding. Verschillende voedingsmiddelen kunnen effecten hebben op de darmen. In dit hoofdstuk stel ik vragen over deze voedingsmiddelen. ',
       image: require('../components/diary/coach/coachfruit.png'),
       category: 'Voeding',
 

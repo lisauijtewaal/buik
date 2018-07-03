@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="info">
-        <h2>huishoudelijke taken</h2>
+
         <Switch>
           <Route path='/beweging/huishoudelijke-taken' component={Info} />
         </Switch>

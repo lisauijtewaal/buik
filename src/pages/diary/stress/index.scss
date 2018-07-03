@@ -5,19 +5,18 @@ body{
     height: 100%;
 
 
-    h2 span{
-      background-color: #b4b8e3 !important;
+    h2 span {
+      background-color: #ffc65c !important;
     }
 
-    .box  {
+    .currentStep {
+      background-color: #ffc65c;
 
-      .currentStep {
+      p {
+        color: #ffc65c !important;
 
-        p {
-          color: #b4b8e3 !important;
-
-        }
       }
+
     }
 
 

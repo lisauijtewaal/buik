@@ -14,6 +14,7 @@ class Slider extends Component {
   }
 
   handleOnChange = (newScore, setScore) => {
+    // zet nieuwe score wanneer de huidige is veranderd.
     this.setState({
       score: newScore
     });

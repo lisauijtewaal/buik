@@ -13,6 +13,7 @@ class App extends Component {
     };
   }
 
+  // zet de nieuwe waarde wanneer de gebruiker op de plus of min klikt.
   setItem = (value, setScore) => {
     const clicks = this.state.clicks + value;
 
@@ -29,8 +30,11 @@ class App extends Component {
       <DiaryContext.Consumer>
         {(diaryState) => (
           <div className="field">{console.log(diaryState.results)}
+            {/* wanneer de gebruiker op de - klik verminder de huidige status met 1 */}
             <button onClick={() => this.setItem(-1, diaryState.setScore)}>-</button>
+            {/*huidige status */}
             <h2>{ this.state.clicks }</h2>
+            {/*wanneer de gebruiker op de + klik verhoog de huidige status met 1 */}
             <button onClick={() => this.setItem(1, diaryState.setScore)}>+</button>
           </div>
         )}

@@ -5,24 +5,18 @@ body{
 
   .movement {
     height: 100%;
-    .step{
-      height: 100%;
-
-      h2 span{
-        background-color: #f9b729 !important;
-      }
-
-      .box  {
-
-        .currentStep {
-
-          p {
-            color: #f9b729 !important;
-
-          }
-        }
-      }
+    h2 span {
+      background-color: #92a6cb !important;
     }
 
+    .currentStep {
+      background-color: #92a6cb;
+
+      p {
+        color: #92a6cb !important;
+
+      }
+
+    }
   }
 }

@@ -11,6 +11,7 @@ class App extends Component {
     };
   }
   handleChange(value, setScore){
+    // zet de nieuwe waardes wanneer de gebruiker het inputveld verandert.
     this.setState({
       value: value,
     });

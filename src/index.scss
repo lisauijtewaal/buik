@@ -25,12 +25,15 @@ html {
   height: auto;
   min-height: 70px;
   line-height: 70px;
+  font-weight: bolder;
+
 }
 
-.nav h3{
+.nav .buik{
   display: inline-block;
   margin: 0 auto;
-
+  margin-left: 50px;
+  text-decoration: none;
   text-align: center;
   color: white;
   font-size: 24px;

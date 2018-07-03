@@ -23,7 +23,6 @@ html {
             h2 {
               color: #c2bc3b;
               font-size: 16px;
-              text-transform: uppercase;
             }
 
           }
@@ -58,11 +57,24 @@ html {
           }
 
         .image {
-          width: 250px;
+          width: 150px;
           height: auto;
           float: left;
-          margin-top: -70px;
-          padding-left: 20px;
+          margin-top: 30px;
+          padding-left: 10px;
+
+            -webkit-animation: mover 2s infinite  alternate;
+            animation: mover 2s infinite  alternate;
+
+          @-webkit-keyframes mover {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+          }
+          @keyframes mover {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+          }
+
         }
         .talk{
           margin-top: 0;

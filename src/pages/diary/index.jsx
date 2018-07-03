@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Home from "../home";
 import {Switch, Route, Link} from 'react-router-dom';
 import Start from './start';
 import Stress from './stress';

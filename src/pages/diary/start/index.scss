@@ -1,8 +1,85 @@
-.start {
-  margin: 0 auto;
+
 
   .diary {
-    width: 200px;
+    .start{
+      padding: 20px;
+    }
+
+    .coach {
+      height: 100%;
+      padding-top: 20px;
+
+      .coach-box {
+        width: 80%;
+        background-color: white;
+        margin: 0 auto;
+
+        .header {
+          background-color: #f7f7f7;
+          margin: 0 auto;
+          padding: 10px 10px;
+          h2 {
+            color: #c2bc3b;
+            font-size: 16px;
+          }
+
+        }
+        .text-coach {
+
+          padding: 20px 20px;
+          background-color: white !important;
+
+          p {
+            margin-top: 0px;
+            padding: 0 10px 0 10px;
+            font-size: 14px;
+
+          }
+
+        }
+
+
+
+        button {
+          color: white;
+          font-size: 14px;
+          text-decoration: none;
+          background-color: #c2bc3b;
+          width: 200px;
+          margin: 0 auto;
+          margin-top: -10px;
+          padding: 20px 10px;
+
+        }
+      }
+
+      .image {
+        width: 125px;
+        height: auto;
+        float: left;
+        margin-top: 30px;
+        padding-left: 10px;
+
+        -webkit-animation: mover 2s infinite  alternate;
+        animation: mover 2s infinite  alternate;
+
+        @-webkit-keyframes mover {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-10px); }
+        }
+        @keyframes mover {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(-10px); }
+        }
+
+      }
+      .talk{
+        margin-top: 0;
+        width: 60px;
+        margin-left: -250px;
+      }
+
+  }
   }
   .message{
     width: 90%;
@@ -26,5 +103,6 @@
       text-decoration: none;
       text-transform: uppercase;
     }
+
+
   }
-}

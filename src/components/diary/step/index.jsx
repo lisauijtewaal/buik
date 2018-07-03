@@ -10,6 +10,7 @@ class App extends Component {
   constructor(props, context) {
 
     super(props, context);
+
     this.state = {
       showPopup: false
     };
@@ -21,11 +22,16 @@ class App extends Component {
     });
   }
 
+  scrollToTop(){
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
 
   render() {
 
     const currentStep = this.props.diaryCategory.steps[this.props.currentStep];
-    console.log(this.props.currentStep);
+    console.log(this.props.diaryCategory.category);
     if (!currentStep){
       return <Coach {...this.props.diaryCategory.coach} />;
 
@@ -64,8 +70,14 @@ class App extends Component {
           <p>{currentStep.question}</p>
           {currentStep.field}
         </div>
+        {this.props.diaryCategory.category==='Denken' ?
+
+          <div className='smileys'>
+            <img className="smiley1" src={require('../../../images/sad_smiley.png')}/>
+            <img className="smiley2" src={require('../../../images/happy_smiley.png')}/>
+          </div> : ''}
         <Link to={currentStep.nextUrl}>
-          <button className="button" type="button">
+          <button className="button" type="button" onClick={this.scrollToTop}>
             Volgende ❯
           </button>
         </Link>

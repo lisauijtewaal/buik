@@ -12,20 +12,6 @@ class App extends Component {
     super(props, context);
   }
 
-  printDocument() {
-    const input = document.getElementsByClassName('results');
-    html2canvas(input)
-      .then((canvas) => {
-        const imgData = canvas.toDataURL('image/png');
-        const pdf = new jsPDF();
-        pdf.addImage(imgData, 'JPEG', 0, 0);
-        // pdf.output('dataurlnewwindow');
-        pdf.save("download.pdf");
-      })
-    ;
-  }
-
-
   render() {
 
     return (
@@ -34,10 +20,7 @@ class App extends Component {
           <div className="results">
 
             <h1>Resultaten</h1>
-            <p>Hieronder vind je de top 3 triggers die mogelijk klachten kunnen veroorzaken</p>
-            {/*<div className="links"> <Link to='/dagboek/resultaten/top-3/' onClick={this.printDocument}>*/}
-                {/*/!*<img className="printImage" src={require('../../../../images/download.png')}/>*!/*/}
-            {/*</Link></div>*/}
+            <p>Aan de hand van jouw antwoorden is er gekeken welke triggers de mogelijke oorzaak kunnen zijn van jouw klachten. In onderstaande top-3 zie je welke triggers dit zijn en kan je meer lezen over deze trigger.   </p>
             <ResultList results={diaryState.results} />
             <div className="button">
               <Link role="button" to={'/'}>Finish!</Link>

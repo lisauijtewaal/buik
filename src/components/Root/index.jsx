@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from "../../pages/home";
 import Diary from "../../pages/diary";
+import Login from "../../pages/loginPage";
 import foodInfo from "../../pages/food";
 import movementInfo from "../../pages/movement";
 import stressInfo from "../../pages/stress";
@@ -10,6 +11,7 @@ const RootComponent = () => {
   return (
     <Switch>
       <Route path='/' exact component={Home} />
+      <Route path='/login' exact component={Login} />
       <Route path='/dagboek' component={Diary} />
       <Route path='/voeding/' component={foodInfo} />
       <Route path='/beweging/' component={movementInfo} />

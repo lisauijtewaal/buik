@@ -8,27 +8,43 @@ class App extends Component {
   render() {
     return <div className="information">
       <div className="image">
-        <img className="image" src={propTypes.food.steps.fruit.image}/>
+        <img className="image" src={propTypes.stress.steps.stress.image}/>
       </div>
       <div className="links"> <Link to='/dagboek/resultaten/top-3/' onClick={() => window.print()}>
       </Link></div>
       <div className="text">
-      <h1>{propTypes.food.steps.fruit.text}</h1>
-      <h3>{propTypes.food.steps.fruit.category}</h3>
-      <p>{propTypes.food.steps.fruit.textfield}</p>
-
+      <h1>{propTypes.stress.steps.stress.text}</h1>
+      <h3>{propTypes.stress.steps.stress.category}</h3>
+      <p>{propTypes.stress.steps.stress.textfield}</p>
+      </div>
       <div className="tips">
         <h2>Wist je dat?</h2>
-        <u>
-        <li>{propTypes.food.steps.fruit.fact1}</li>
-        <li>{propTypes.food.steps.fruit.fact2}</li>
-        <li>{propTypes.food.steps.fruit.fact3}</li>
-        </u>
+        <p>{propTypes.stress.steps.stress.fact3}</p>
       </div>
       <div className="help">
         <h2> Wat kan ik doen? </h2>
-        <p>{propTypes.food.steps.fruit.help}</p>
-      </div>
+        <p>Er zijn verschillende vaardigheden aan te leren die stress kunnen verminderen. Waaronder onderstaande oefeningen:</p>
+        <ul>
+          <li>
+            <div className="textCard">
+              <h4>Ontspanninsoefeningen</h4>
+            </div>
+          </li>
+          <li>
+            <div className="textCard">
+              <h4>Kom in beweging</h4>
+            </div>
+          </li>
+          <li>
+            <div className="textCard">
+              <h4>Ga op in muziek</h4>
+            </div>
+          </li>
+        </ul>
+
+        <p>{propTypes.stress.steps.stress.help}</p>
+        <iframe width="250" height="200" src="https://www.youtube.com/embed/z46nV3cEt5M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
       </div>
     </div>;
 
