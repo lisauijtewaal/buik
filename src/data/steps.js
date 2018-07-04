@@ -23,7 +23,7 @@ export default {
     steps: {
       stress: {
         url: '/spanning/langdurige-stress',
-        text: 'stress',
+        text: 'Stress',
         textfield: 'Tijdens langdurige stress is onze  stofwisseling minder belangrijk en dus ook minder actief. Stofwisseling helpt om voedsel om te zetten in energie. Wanneer je moet vluchten of vechten gebruikt je lichaam de energie die op dat moment voorradig is. De stofwisseling vertraagt, of stopt zelfs helemaal. De gevolgen zijn een opgeblazen gevoel, een rommelende buik, of zelfs hevige krampen.',
         image: require('../images/diaryCategory/stress/stress.jpg'),
         question: 'Hoeveel stress heb jij vandaag ervaren?',

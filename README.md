@@ -1,3 +1,8 @@
+BU!K is a webapplication build to help people with IBS by giving them personalised advice and tools. 
+BU!K is build in the Javascript framework React and is using ES6. Styling is done through SASS.
+
+See working demo here: 
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

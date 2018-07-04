@@ -11,7 +11,7 @@ class Popup extends Component {
         <div className='popup_inner'>
           <h1>{this.props.text}</h1>
           <img className="inner_image" src={this.props.image}/><br />
-          <button onClick={this.props.closePopup}>sluiten</button>
+          <button className="button_start" onClick={this.props.closePopup}>sluiten</button>
         </div>
       </div>
     );

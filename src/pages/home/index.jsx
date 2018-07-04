@@ -10,7 +10,12 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="titel">Krijg grip op jouw maag-en darmklachten</h1>
-        <Link className="button "to='/login'>Login</Link> of  <Link className="button" to='/dagboek'>Maak een account</Link>
+        <Link to='/dagboek'>  <button className="button_start" type="button" onClick={this.scrollToTop}>
+          Login
+        </button></Link>
+        <br /> of <br /> <Link to='/login'>  <button className="button_start" type="button" onClick={this.scrollToTop}>
+        Maak een account
+      </button></Link>
       </div>
     );
   }

@@ -24,7 +24,9 @@ class App extends Component {
                  minLength="8" required
                  placeholder="code van huisarts" />
         </div>
-        <Link className="button "to='/dagboek'>Login</Link>
+        <Link to='/dagboek'><button className="button_start" type="button" onClick={this.scrollToTop}>
+          Login
+        </button></Link>
       </div>
     );
   }

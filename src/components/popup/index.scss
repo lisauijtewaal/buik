@@ -3,7 +3,7 @@
   left: 15%;
   right: 15%;
   top: 15%;
-  bottom: 50%;
+  bottom: 35%;
   margin: 0 auto;
   padding: 20px;
   background: white;
@@ -28,4 +28,17 @@
   bottom: 0;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #c2bc3b;
+  margin-top: 10px !important;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+
 }

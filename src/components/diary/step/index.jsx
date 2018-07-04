@@ -71,13 +71,12 @@ class App extends Component {
           {currentStep.field}
         </div>
         {this.props.diaryCategory.category==='Denken' ?
-
           <div className='smileys'>
             <img className="smiley1" src={require('../../../images/sad_smiley.png')}/>
             <img className="smiley2" src={require('../../../images/happy_smiley.png')}/>
           </div> : ''}
         <Link to={currentStep.nextUrl}>
-          <button className="button" type="button" onClick={this.scrollToTop}>
+          <button className="button_trigger" type="button" onClick={this.scrollToTop}>
             Volgende ❯
           </button>
         </Link>
