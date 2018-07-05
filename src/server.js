@@ -3,10 +3,10 @@ const path = require('path');
 
 const app = express();
 
-console.log(path.join('.', '../build'));
+const PORT = process.env.PORT || 3000;
 
-app.use(express.static(path.resolve('../build')));
+app.use(express.static(path.join(__dirname, '../build')));
 
-app.listen(process.env.PORT || 3000, () => {
-  console.info(`Listening on port ${process.env.PORT || 3000}`);
+app.listen(PORT, () => {
+  console.info(`Listening on port ${PORT}`);
 });
