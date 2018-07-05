@@ -36,6 +36,6 @@
     "start:prod": "node src/server.js"
   },
   "engines": {
-    "node": "^8.11.1"
+    "node": "8.11.1"
   }
 }
