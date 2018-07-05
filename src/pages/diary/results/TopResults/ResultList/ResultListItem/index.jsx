@@ -31,6 +31,10 @@ class ResultListItem extends Component {
     super(props, context);
   }
 
+  scrollToTop(){
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 
 
   render() {
@@ -48,32 +52,40 @@ class ResultListItem extends Component {
     } else if (score <= 6) {
       scoreColor = 'orange';
     }
+    console.log(`${question.color} !important`,);
 
 
     return (
 
       <li className={`item-${index + 1} ${scoreColor}`}>
-        <div className="colorband" style={{backgroundColor: scoreColor}}></div>
         <div className="field">
-        <div className="number">
-        <div className="header">
-          <h1>{question.text}</h1>
-          <h2>({question.category})</h2>
-        </div>
-        <div className="textfield">
-        <p>
-          Op basis van jouw antwoorden blijkt dat de trigger '{question.text}'  mogelijk klachten kan veroorzaken in jouw dagelijks leven. Maar {question.fact3}
+          <div className="info">
+            <div className="header">
+              <style>
+                {`
+                    body h2 span.manmanman-${index} {
+                      background-color: ${question.color} !important;
+                    }
+                `}
+              </style>
+              <h2><span className={`manmanman-${index}`}>{question.category}</span></h2>
+              <h1><span>{question.text}</span></h1>
+              <span className={`rank ${scoreColor}`}><span>{index + 1}</span></span>
+            </div>
+            <div className="textfield">
+              <p>
+                Op basis van jouw antwoorden blijkt dat de trigger <span>'{question.text}'</span>  mogelijk klachten kan veroorzaken in jouw dagelijks leven. Maar {question.fact3}
 
-        </p>
+              </p>
+            </div>
+            <Link to="/stressinfo">
+              <button className="button_trigger" type="button" onClick={this.scrollToTop}>
+                Lees meer ❯
+              </button>
+            </Link>
+          </div>
+        </div>
 
-          <Link to={question.url}>
-            <button className="hallo" type="button">
-              Lees hoe je jouw klachten kan verminderen❯
-            </button>
-          </Link>
-        </div>
-        </div>
-        </div>
       </li>
     );
   }

@@ -5,6 +5,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "create-react-class": "^15.6.3",
+    "express": "^4.16.3",
     "html2canvas": "^1.0.0-alpha.12",
     "jquery": "^3.3.1",
     "jspdf": "^1.4.0",
@@ -30,6 +31,8 @@
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
-    "build-js": "react-scripts build"
+    "build-js": "react-scripts build",
+    "postinstall": "npm run build",
+    "start:prod": "node src/server.js"
   }
 }

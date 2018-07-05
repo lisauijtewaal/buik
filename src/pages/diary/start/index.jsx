@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Link} from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import './index.css';
 import SweetAlert from 'react-bootstrap-sweetalert';
 
@@ -43,7 +43,7 @@ class App extends Component {
     this.setState({
       alert: null
     });
-    window.location.href = "/dagboek/ontspanning#/dagboek/ontspanning";
+    this.props.history.push("/dagboek/ontspanning");
 
   }
 
@@ -79,4 +79,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);

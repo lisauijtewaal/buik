@@ -27,12 +27,16 @@ class App extends Component {
           <div className="field">{console.log(diaryState.results)}
             <input type="number" value={this.state.value}
                    onChange={(e) => this.handleChange(e.target.value, diaryState.setScore)} />
-            <h3>{this.state.value} minuten</h3>
+            <h3>{this.state.value} {this.props.label}</h3>
           </div>
         )}
       </DiaryContext.Consumer>
     )
   }
 }
+
+App.defaultProps = {
+  label: "minuten",
+};
 
 export default App;

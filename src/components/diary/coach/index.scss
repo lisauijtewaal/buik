@@ -4,6 +4,32 @@ html {
   body {
     height: 100%;
 
+    @media only screen and (min-width: 1080px) {
+
+      .step{
+
+
+        .coach {
+          width: 50%;
+          margin: 0 auto;
+
+          .talk{
+            margin-top: 0;
+            width: 60px;
+            margin-left: -450px !important;
+          }
+
+            .image {
+              margin-left: 20%;
+            }
+
+        }
+      }
+
+
+    }
+
+
     .step {
 
       height: 100%;

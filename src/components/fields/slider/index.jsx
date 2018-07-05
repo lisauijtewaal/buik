@@ -9,7 +9,7 @@ class Slider extends Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-      score: 1,
+      score: 5,
     };
   }
 

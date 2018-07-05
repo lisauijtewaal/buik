@@ -27,15 +27,15 @@ class App extends Component {
           question: stepsData.food.steps.koolzuur,
         },
         fruit: {
-          score: 1,
+          score: 10,
           question: stepsData.food.steps.fruit,
         },
         angst: {
-          score: 1,
+          score: 5,
           question: stepsData.stress.steps.angst,
         },
         stress: {
-          score: 1,
+          score: 5,
           question: stepsData.stress.steps.stress,
         },
       }

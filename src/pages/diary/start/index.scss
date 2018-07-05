@@ -1,6 +1,32 @@
-
+@media only screen and (min-width: 1080px) {
 
   .diary {
+    .start {
+
+      .coach {
+        width: 50%;
+        margin: 0 auto;
+
+        .talk {
+          margin-top: 0;
+          width: 60px;
+          margin-left: -450px;
+        }
+
+        .image {
+          margin-left: 20%;
+        }
+
+      }
+    }
+  }
+
+
+
+}
+
+
+.diary {
     .start{
       padding: 20px;
     }

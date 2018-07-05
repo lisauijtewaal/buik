@@ -4,20 +4,20 @@ import ResultListItem from "./ResultListItem/index";
 class ResultList extends Component {
   render() {
     const resultsObjects = this.props.results;
-    // array van objecten(triggers) met de ingevulde waardes van de gebruiker.
+    // array with the answers of the user.
     const results = Object.entries(resultsObjects).map(([type, result ]) => ({ type, ...result }));
-    // filter de triggers van meest afijkend van index tot minst afwijkend van index.
+    // Sort the results that deviate the most from score.
     const sortedResults = results.sort((a, b) => {
       return a.score - b.score;
     });
 
-    // selecteer de 3 objecten (triggers) van de ingevulde waardes van de gebruiker die het meest afwijken van de index.
+   // select the 3 most relevant triggers.
     const filteredResults = sortedResults.slice(0, 3);
 
     return (
 
       <ul>
-        {/* loop door results. type = sport, result = { score: 10, question: {uit steps-data} } */}
+        {/* loop trough results. type = sport, result = { score: 10, question: {uit steps-data} } */}
         {filteredResults.map((result, index) => {
           return (
             <ResultListItem
