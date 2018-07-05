@@ -1,7 +1,6 @@
 import './index.css';
 import React, { Component } from 'react';
 import RangeSlider from 'react-rangeslider';
-import './slider.css'
 import {DiaryContext} from "../../../context/diary-context";
 
 
