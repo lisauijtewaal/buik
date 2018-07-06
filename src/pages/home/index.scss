@@ -8,16 +8,39 @@ body{
 }
 }
 
-
 body{
   background-image: url("bg2.png");
   background-repeat: no-repeat;
   background-size: 500px 300%;
+.App {
+  padding: 30px;
+
+  .image_home {
+    margin: 0 auto;
+    position: relative;
+
+    img{
+      width: 300px;
+    }
 
 
-.titel{
-  font-size: 40px;
+  }
+
+
+ .log  {
+  color: white;
+   p{
+     display: inline;
+   }
+   a{
+     color:white;
+     display: inline;
+   }
+  }
+}
+h2{
   padding: 10px;
+  font-size: 20px;
 }
 
 .logo{

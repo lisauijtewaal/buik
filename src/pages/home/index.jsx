@@ -9,13 +9,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="titel">Krijg grip op jouw maag-en darmklachten</h1>
-        <Link to='/dagboek'>  <button className="button_start" type="button" onClick={this.scrollToTop}>
-          Login
-        </button></Link>
-        <br /> of <br /> <Link to='/login'>  <button className="button_start" type="button" onClick={this.scrollToTop}>
+      <div className="image_home">
+        <img src={require('../../images/illustation.png')}/>
+        <h2 className="titel">Krijg grip op jouw maag-en darmklachten</h2>
+      </div>
+        <Link to='/login'>  <button className="button_start" type="button" onClick={this.scrollToTop}>
         Maak een account
       </button></Link>
+        <div className="log">
+        <p> Heb je al een account?</p> <Link to='/dagboek' className="inline" >Login</Link>
+      </div>
       </div>
     );
   }
