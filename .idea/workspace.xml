@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="720a1593-3408-416c-929e-e96811187cdd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/images/illustation.png" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/index.jsx" afterPath="$PROJECT_DIR$/src/pages/home/index.jsx" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/index.scss" afterPath="$PROJECT_DIR$/src/pages/home/index.scss" />
-      <change beforePath="$PROJECT_DIR$/src/pages/loginPage/index.scss" afterPath="$PROJECT_DIR$/src/pages/loginPage/index.scss" />
+      <change beforePath="$PROJECT_DIR$/src/data/steps.js" afterPath="$PROJECT_DIR$/src/data/steps.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -135,11 +131,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/home/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="261">
               <caret line="40" column="2" lean-forward="false" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="steps.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/steps.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="51" column="64" lean-forward="true" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -249,7 +255,6 @@
         <option value="$PROJECT_DIR$/src/components/diary/step/index.scss" />
         <option value="$PROJECT_DIR$/src/pages/stress/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/fields/input/index.jsx" />
-        <option value="$PROJECT_DIR$/src/data/steps.js" />
         <option value="$PROJECT_DIR$/src/pages/diary/start/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/diary/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/diary/results/TopResults/ResultList/ResultListItem/index.jsx" />
@@ -266,6 +271,7 @@
         <option value="$PROJECT_DIR$/src/pages/loginPage/index.scss" />
         <option value="$PROJECT_DIR$/src/pages/home/index.jsx" />
         <option value="$PROJECT_DIR$/src/pages/home/index.scss" />
+        <option value="$PROJECT_DIR$/src/data/steps.js" />
       </list>
     </option>
   </component>
@@ -661,7 +667,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230836000" />
+    <option name="totallyTimeSpent" value="231730000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -960,14 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/steps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="147" column="12" lean-forward="false" selection-start-line="147" selection-start-column="12" selection-end-line="147" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/diary/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1221,8 +1219,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="261">
           <caret line="40" column="2" lean-forward="false" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/steps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="51" column="64" lean-forward="true" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
           <folding />
         </state>
       </provider>
